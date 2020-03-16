@@ -1,0 +1,6 @@
+int get(Node head,int pos){
+int count=1;
+    if(count==pos)
+      return head.data;
+    return get(head.next,pos-1);
+ }
