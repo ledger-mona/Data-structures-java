@@ -1,0 +1,3 @@
+void deleteList(head){
+head=null;
+}//garbage collector will free ups the memory of the linked list
