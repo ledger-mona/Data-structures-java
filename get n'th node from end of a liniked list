@@ -7,6 +7,7 @@ int getNthNode(int n){
    }
    if(len<n){
    return;}
+   temp=head;
    for(int i=0;i<len-n-1;i++)
    {
       temp=temp.next;
