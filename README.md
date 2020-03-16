@@ -1,4 +1,5 @@
 # Data-structures-java
+//deleting a node in a given postitioin
 class GfG
 {
     Node deleteNode(Node head, int x)
@@ -11,16 +12,14 @@ class GfG
 	}
 	else
 	{
-	    Node n1=null;
-	    Node n=head;
-	    for(int i=1;i<x-1;i++)
-	    {
-	        n=n.next;
-	    }
-	    n1=n.next;
-	    n.next=n1.next;
-	    n1=null;
-	    return head;
+	    Node prev=null;
+	    Node temp=head;
+        for(int i=0;i<x-1;i++){
+            prev=temp; 
+	    temp=temp.next;
+        }
+        prev.next=temp.next;
+	return head;
 	
 	}
 
